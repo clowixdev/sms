@@ -1,0 +1,44 @@
+<footer class="w-100 py-4 flex-shrink-0 pb-0">
+    <div class="container py-4">
+        <div class="row gy-4 gx-5">
+            <div class="col-lg-6 col-md-6">
+                <h5 class="h1 text-black">{{_('Shipment Management System')}}</h5>
+                <p class="small text-muted">{{_('Get best shipment experience using our system. Our team will never stop
+                    developing this service. We believe that our service will help you a lot.')}}</p>
+            </div>
+            <div class="col-lg-2 col-md-6">
+                <h5 class="text-black mb-3">{{_('Quick links')}}</h5>
+                <ul class="list-unstyled text-muted">
+                    <li><a href="https://www.instagram.com/iskra_sakh/" target="_blank"
+                            class="btn btn-outline-dark circled mb-2"><i class="bi bi-instagram"></i></a>
+                        <a href="https://github.com/clow1x" target="_blank" class="btn btn-outline-dark circled mb-2"><i
+                                class="bi bi-github"></i></a>
+                        <a href="https://vk.com/clowix" target="_blank"
+                            class="btn btn-outline-dark circled mb-2"><i class="bi bi-person-circle"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <h5 class="text-black mb-3">{{_('Contact us!')}}</h5>
+                <p class="small text-muted">{{_('You can write a letter to our team! We will read and answer to your letter
+                    as soon as possible. Feel free to ask questions and send complains!')}}</p>
+                <form action="{{url_for('sendMail')}}" method='post'>
+                    <input type="hidden" name="csrf_token" value="{{ csrf_token() }}" />
+                    <div class="input-group mb-3">
+                        <input class="form-control" type="text" placeholder="{{_('Enter the subject of your email')}}"
+                            aria-label="" aria-describedby="send-email-btn" name='subject'>
+                        <button class="btn btn-outline-dark" id="send-email-btn" type="submit"><i
+                                class="bi bi-send"></i></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg2 copy">
+        <div class="row text-center pb-0">
+            <div class="col-12">
+                <p class="small text-muted mb-0">{{_('&copy; Copyrights. All rights reserved. FLL-CH-149 - TEAM ISKRA')}}</p>
+            </div>
+        </div>
+    </div>
+</footer>

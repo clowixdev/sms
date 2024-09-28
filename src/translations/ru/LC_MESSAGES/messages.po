@@ -1,0 +1,735 @@
+# Russian translations for PROJECT.
+# Copyright (C) 2021 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-04-05 21:54+1100\n"
+"PO-Revision-Date: 2021-12-30 22:12+1100\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ru\n"
+"Language-Team: ru <LL@li.org>\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: sms/templates/pages/login.html:34 sms/templates/pages/shipment-login.html:26
+#: sms/views.py:57
+msgid "Homepage"
+msgstr "Главная"
+
+#: sms/views.py:73
+msgid "Shipment №{id}"
+msgstr "Доставка №{id}"
+
+#: sms/views.py:105
+msgid "Auth token"
+msgstr "Аутентификационный номер"
+
+#: sms/views.py:120
+msgid "Invalid authentication token"
+msgstr "Неверный аутентификационный токен"
+
+#: sms/views.py:135
+msgid "Invalid shipment id"
+msgstr "Неверный номер доставки"
+
+#: sms/templates/includes/header.html:30 sms/templates/pages/login.html:32
+#: sms/views.py:143
+msgid "Login"
+msgstr "Войти"
+
+#: sms/views.py:166
+msgid "Successfully logged in"
+msgstr "Вы успешно вошли"
+
+#: sms/views.py:173
+msgid "Incorrect password"
+msgstr "Неправильный пароль"
+
+#: sms/views.py:180
+msgid "Successfully logged out"
+msgstr "Вы успешно вышли"
+
+#: sms/templates/includes/header.html:25 sms/views.py:187
+msgid "Create"
+msgstr "Создать"
+
+#: sms/views.py:200
+msgid "Incorrect file extension, use .pdf"
+msgstr "Неправильное расширение документа, используйте .pdf"
+
+#: sms/views.py:268
+msgid "QR code"
+msgstr "QR код"
+
+#: sms/views.py:342
+msgid "Shipment was deleted successfully"
+msgstr "Доставка была успешно удалена"
+
+#: sms/views.py:361
+msgid "Shipment was accepted successfully"
+msgstr "Доставка была успешно принята"
+
+#: sms/views.py:373
+msgid "Shipments list"
+msgstr "Список доставок"
+
+#: sms/templates/base/base.html:15 sms/templates/includes/footer.html:5
+msgid "Shipment Management System"
+msgstr "Система Управления Доставками"
+
+#: sms/templates/includes/footer.html:6
+msgid ""
+"Get best shipment experience using our system. Our team will never stop\n"
+"                    developing this service. We believe that our service "
+"will help you a lot."
+msgstr ""
+"Получите массу превосходного опыта пользуясь нашей системой. Наша команда"
+" никогда не прекратит\n"
+"                    разработку этого сервиса. Мы надеемся что наш сервис во многом упростит вашу жизнь."
+
+#: sms/templates/includes/footer.html:10
+msgid "Quick links"
+msgstr "Ссылки"
+
+#: sms/templates/includes/footer.html:22
+msgid "Contact us!"
+msgstr "Напишите нам!"
+
+#: sms/templates/includes/footer.html:23
+msgid ""
+"You can write a letter to our team! We will read and answer to your "
+"letter\n"
+"                    as soon as possible. Feel free to ask questions and "
+"send complains!"
+msgstr ""
+"Вы можете написать письмо нашей команде! Мы прочтем и ответим на ваше "
+"письмо\n"
+"                    как только это будет возможно. Задавайте нам вопросы "
+"и отправляйте жалобы!"
+
+#: sms/templates/includes/footer.html:28
+msgid "Enter the subject of your email"
+msgstr "Введите тему письма"
+
+#: sms/templates/includes/footer.html:40
+msgid "&copy; Copyrights. All rights reserved. FLL-CH-149 - TEAM ISKRA"
+msgstr "&copy; Copyrights. Все права защищены. FLL-CH-149 - TEAM ISKRA"
+
+#: sms/templates/includes/header.html:6
+msgid ""
+"Shipments\n"
+"                    management system - SMS"
+msgstr ""
+"Система\n"
+"                    управления доставками - SMS"
+
+#: sms/templates/includes/header.html:9
+msgid "Change language:"
+msgstr "Изменить язык:"
+
+#: sms/templates/includes/header.html:13
+msgid "Shipments management system created by the Sakhalin team IskRa"
+msgstr "Система управления доставками созданная Сахалинской командой - ИскРа"
+
+#: sms/templates/includes/header.html:19
+msgid "Search shipment by id"
+msgstr "Поиск доставки по id"
+
+#: sms/templates/includes/header.html:26
+msgid "List"
+msgstr "Список"
+
+#: sms/templates/includes/header.html:28
+msgid "Logout"
+msgstr "Выйти"
+
+#: sms/templates/pages/create-shipment.html:14
+msgid "Create shipment"
+msgstr "Создать доставку"
+
+#: sms/templates/pages/create-shipment.html:18
+msgid "Select Driver"
+msgstr "Выберите водителя"
+
+#: sms/templates/pages/create-shipment.html:29
+msgid "Select Car"
+msgstr "Выберите машину"
+
+#: sms/templates/pages/create-shipment.html:40
+msgid "Select Arrival Date"
+msgstr "Выберите дату прибытия груза"
+
+#: sms/templates/pages/create-shipment.html:49
+msgid "Documents"
+msgstr "Документы"
+
+#: sms/templates/pages/create-shipment.html:55
+#: sms/templates/pages/sign-docs.html:42
+msgid "Save"
+msgstr "Сохранить"
+
+#: sms/templates/pages/index.html:13
+msgid "About our team"
+msgstr "О нашей команде"
+
+#: sms/templates/pages/index.html:15
+msgid ""
+"The Iskra team was created in 2018 and consisted of four young robotics "
+"engineers and\n"
+"                            two\n"
+"                            trainers. The goal was to prepare them and "
+"participate in various competitions. The team has\n"
+"                            changed over time,\n"
+"                            but their skill has invariably grown, as "
+"evidenced by the victories at the regional and\n"
+"                            all-Russian\n"
+"                            level."
+msgstr ""
+"Команда «ИскРа» была создана в 2018 году и состояла из четырех юных "
+"робототехников и двух\n"
+"                        тренеров. Цель – подготовка и участие в различных"
+" соревнованиях. Со временем менялся состав                             "
+"команды,\n"
+"                        но неизменно росло мастерство, о чем говорят "
+"победы на областном и всероссийском\n"
+"                        уровне."
+
+#: sms/templates/pages/index.html:24
+msgid ""
+"Main achievements - 4 1st degree diplomas were won at Roboforum in "
+"Yuzhno-Sakhalinsk in\n"
+"                            2019\n"
+"                            year, three years in a row (in 2019, 2020 and"
+" 2021) we became absolute winners of\n"
+"                            regional\n"
+"                            robotic competitions \"IKaR\", in the All-"
+"Russian\n"
+"                            robotic competitions reached 2nd place in the"
+" IKaR-TECHNO nomination in 2020 and 1\n"
+"                            places\n"
+"                            in the nomination \"IKaR-PROFI\" in 2021, "
+"took 1st place in the regional Festival of\n"
+"                            Engineering\n"
+"                            creativity \"KVANT-IN\" in the nomination "
+"\"Makerton (Goldberg Machines)\" in 2021. "
+msgstr ""
+"Главные достижения – 4 диплома 1 степени завоевали на «Робофоруме» в "
+"Южно-Сахалинске в 2019\n"
+"                        году, три года подряд (в 2019, 2020 и 2021 гг.) "
+"становились абсолютными победителями\n"
+"                        областных\n"
+"                        робототехнических соревнований  \"ИКаР\" "
+"(Инженерные кадры России), во Всероссийских\n"
+"                        робототехнических соревнованиях достигли 2 места "
+"в номинации «ИКаР-ТЕХНО» в 2020 году и 1\n"
+"                        места\n"
+"                        в номинации \"ИКаР-ПРОФИ\"  в 2021 году, заняли 1"
+" место в областном Фестивале инженерного\n"
+"                        творчества \"KVANT-IN\" в номинации \"Мейкертон "
+"(Машины Голдберга)\" в 2021 году. "
+
+#: sms/templates/pages/index.html:36
+msgid ""
+"Team members are very different both in age (13-16 years old) and in "
+"hobbies (3D\n"
+"                            modeling,\n"
+"                            programming, construction, swimming, "
+"tourism). But we are all united by the desire for\n"
+"                            creativity and experimentation. "
+msgstr ""
+"Участники команды очень разные и по возрасту (13-16 лет), и по увлечениям"
+" (3D моделирование,\n"
+"                        программирование, конструирование, плавание, "
+"туризм). Но нас всех объединяет стремление к\n"
+"                        творчеству и экспериментированию. "
+
+#: sms/templates/pages/index.html:119
+msgid "We are in \"FLL\""
+msgstr "Мы в \"FLL\""
+
+#: sms/templates/pages/index.html:121
+msgid ""
+"In March 2021, the ISKRA team tried their hand at the regional stage of "
+"the\n"
+"                            international\n"
+"                            Championship called First LEGO League (FLL) "
+"in the Challenge category. Our team took 2nd\n"
+"                            place and in April\n"
+"                            we took part in the National Championship in "
+"Nizhny Novgorod. It was very difficult and\n"
+"                            interesting. "
+msgstr ""
+"В марте 2021 года «искровцы» впервые попробовали свои силы на "
+"региональном этапе\n"
+"                        международного\n"
+"                        чемпионата First LEGO League (FLL) в категории "
+"Challenge. Команда заняла 2 место и в апреле\n"
+"                        приняла участие в Национальном чемпионате в "
+"Нижнем Новгороде. Было очень трудно и\n"
+"                        интересно. "
+
+#: sms/templates/pages/index.html:129
+msgid ""
+"The team brought home a lot of impressions and ideas. And immediately "
+"started making\n"
+"                            preparations for\n"
+"                            FLL\n"
+"                            2022 year. Team coach Anna Georgievna "
+"Strelchenok took part in September\n"
+"                            educational project \"Academy FIRST\" in "
+"Yuzhno-Sakhalinsk and was certified as a judge and\n"
+"                            FLL Challenge 2022 Expert. "
+msgstr ""
+"Ребята привезли домой много впечатлений и идей. И сразу же начали "
+"планировать подготовку к\n"
+"                        FLL\n"
+"                        2022 года. Тренер команды Анна Георгиевна "
+"Стрельченок в сентябре приняла участие в\n"
+"                        образовательном проекте \"Академия FIRST\" в "
+"Южно-Сахалинске и была аттестована на судью и\n"
+"                        эксперта FLL Challenge 2022 года. "
+
+#: sms/templates/pages/index.html:137
+msgid ""
+"In September, the expanded version of the team began preparations for the"
+" regional\n"
+"                            stage of the championship\n"
+"                            -\n"
+"                            design and programming of robots, creating a "
+"project, make an engineering book. "
+msgstr ""
+"В сентябре команда в расширенном составе начала подготовку к "
+"региональному этапу чемпионата\n"
+"                        -\n"
+"                        конструированию и программированию роботов, "
+"подготовке проекта, оформлению инженерной книги. "
+
+#: sms/templates/pages/index.html:148
+msgid "About project"
+msgstr "О Проекте"
+
+#: sms/templates/pages/index.html:150
+msgid ""
+"At the end of October, our team met with the cargo transportation "
+"coordinator of the company LLC\n"
+"                            \"DSV\n"
+"                            Sakhalin \"Kobychev MV, who spoke about the "
+"features and problems of the transportation of goods in\n"
+"                            our region. In his opinion, the main problems"
+" are: "
+msgstr ""
+"В конце октября наша команда встретилась с координатором грузоперевозок "
+"компании ООО\n"
+"                            \"ДСВ\n"
+"                            Сахалин\" Кобычевым М.В., который рассказал "
+"об особенностях и проблемах перевозки грузов в\n"
+"                            нашем регионе. По его мнению, основными "
+"проблемами являются: "
+
+#: sms/templates/pages/index.html:156
+msgid ""
+"1. The driver does not have the necessary documents, which is why the car"
+" cannot on time\n"
+"                            to get in\n"
+"                            port or warehouse, this leads to a loss of "
+"time; <br> <i class=\"bi bi-globe\"></i>\n"
+"                            2. Mandatory reconciliation of cargo and "
+"checking the conditions of transportation (for example, securing cargo\n"
+"                            or\n"
+"                            containers) at checkpoints. "
+msgstr ""
+"1. Отсутствие у водителя необходимых документов, из-за чего  машина не "
+"может вовремя\n"
+"                            попасть в\n"
+"                            порт или на склад, это приводит к потере "
+"времени; <br> <i class=\"bi bi-globe\"></i>\n"
+"                            2. Обязательная сверка грузов и проверка "
+"условий грузоперевозки (например, крепление грузов\n"
+"                            или\n"
+"                            контейнеров) в контрольных точках. "
+
+#: sms/templates/pages/index.html:165
+msgid ""
+"After some discussion, we decided to make a website with a database of "
+"shipments. Each record contains information about the company, about the "
+"driver, about\n"
+"                            the car and all the necessary documents. Any "
+"responsible person will be able to view the\n"
+"                            documents, to whom the driver will show the "
+"generated QR code."
+msgstr ""
+"Посовещавшись, мы решили сделать сайт с базой данных о грузоперевозках. "
+"Каждая запись содержит информацию о компании, о водителе,\n"
+"                            о машине и все необходимые документы. "
+"Документы сможет посмотреть любое ответственное лицо, \n"
+"                            которому водитель покажет сгенерированный "
+"QR-код."
+
+#: sms/templates/pages/login.html:12
+msgid "Log in to continue"
+msgstr "Войдите чтобы продолжить"
+
+#: sms/templates/pages/login.html:29
+msgid "Stay in system"
+msgstr "Оставаться в системе"
+
+#: sms/templates/pages/page404.html:12
+msgid "Page not found :("
+msgstr "Страница не найдена :("
+
+#: sms/templates/pages/page404.html:13
+msgid "Try to check url you entered"
+msgstr "Проверьте URL адрес этой страницы"
+
+#: sms/templates/pages/shipment-list.html:12
+msgid " Accepted shipments: "
+msgstr " Принятые доставки: "
+
+#: sms/templates/pages/shipment-list.html:18
+#: sms/templates/pages/shipment-list.html:51
+msgid "ID"
+msgstr "ID"
+
+#: sms/templates/pages/shipment-list.html:21
+msgid "Accepted"
+msgstr "Принята"
+
+#: sms/templates/pages/shipment-list.html:28
+msgid "Create date:"
+msgstr "Дата создания:"
+
+#: sms/templates/pages/shipment-list.html:29
+msgid "Arrival date:"
+msgstr "Дата прибытия:"
+
+#: sms/templates/pages/shipment-list.html:30
+msgid "Driver fio:"
+msgstr "ФИО Водителя:"
+
+#: sms/templates/pages/shipment-list.html:31
+msgid "Car registration number:"
+msgstr "Регистрационный номер машины:"
+
+#: sms/templates/pages/shipment-list.html:36
+#: sms/templates/pages/shipment-list.html:69
+msgid "View"
+msgstr "Просмотреть"
+
+#: sms/templates/pages/shipment-list.html:45
+msgid " Transit shipments: "
+msgstr " В пути: "
+
+#: sms/templates/pages/shipment-list.html:54
+msgid "Transit "
+msgstr "В пути "
+
+#: sms/templates/pages/shipment-list.html:61
+msgid "Create date: "
+msgstr "Дата создания: "
+
+#: sms/templates/pages/shipment-list.html:62
+msgid "Arrival date: "
+msgstr "Дата прибытия: "
+
+#: sms/templates/pages/shipment-list.html:63
+msgid "Driver fio: "
+msgstr "ФИО Водителя: "
+
+#: sms/templates/pages/shipment-list.html:64
+msgid "Car registration number: "
+msgstr "Регистрационный номер машины: "
+
+#: sms/templates/pages/shipment-login.html:14
+msgid "Authentication token"
+msgstr "Аутентификационный токен"
+
+#: sms/templates/pages/shipment-login.html:25
+msgid "Send"
+msgstr "Отправить"
+
+#: sms/templates/pages/shipment.html:12
+msgid " SHIPMENT ID: "
+msgstr " ID ДОСТАВКИ: "
+
+#: sms/templates/pages/shipment.html:13
+msgid " STATUS: "
+msgstr " СТАТУС: "
+
+#: sms/templates/pages/shipment.html:14
+msgid "Date info:"
+msgstr "Информация о времени:"
+
+#: sms/templates/pages/shipment.html:16
+msgid "Shipment created:"
+msgstr "Дата создания:"
+
+#: sms/templates/pages/shipment.html:20
+msgid "Shipment arrival date:"
+msgstr "Дата прибытия:"
+
+#: sms/templates/pages/shipment.html:24
+msgid "Driver info:"
+msgstr "Информация о водителе:"
+
+#: sms/templates/pages/shipment.html:26
+msgid "FIO:"
+msgstr "ФИО:"
+
+#: sms/templates/pages/shipment.html:30
+msgid "Date of birth:"
+msgstr "Дата рождения:"
+
+#: sms/templates/pages/shipment.html:34
+msgid "Driver license:"
+msgstr "Водительские права:"
+
+#: sms/templates/pages/shipment.html:38 sms/templates/pages/shipment.html:69
+msgid "DL expire date:"
+msgstr "Дата истечения прав:"
+
+#: sms/templates/pages/shipment.html:42
+msgid "DL categories"
+msgstr "Категории"
+
+#: sms/templates/pages/shipment.html:65
+msgid "MED expire date:"
+msgstr "Дата истечения мед. осмотра:"
+
+#: sms/templates/pages/shipment.html:73
+msgid "OMS number:"
+msgstr "ОМС:"
+
+#: sms/templates/pages/shipment.html:77
+msgid "Phone:"
+msgstr "Телефон:"
+
+#: sms/templates/pages/shipment.html:81
+msgid "Car info:"
+msgstr "Информация о машине:"
+
+#: sms/templates/pages/shipment.html:83
+msgid "Model:"
+msgstr "Модель:"
+
+#: sms/templates/pages/shipment.html:87
+msgid ""
+"Registration\n"
+"                                    number:"
+msgstr ""
+"Номерной\n"
+"                                    знак:"
+
+#: sms/templates/pages/shipment.html:91
+msgid ""
+"PTS\n"
+"                                    number:"
+msgstr ""
+"Номер\n"
+"                                    ПТС:"
+
+#: sms/templates/pages/shipment.html:95
+msgid "PTS expire date:"
+msgstr "Дата истечения ПТС"
+
+#: sms/templates/pages/shipment.html:99
+msgid ""
+"OSAGO\n"
+"                                    number:"
+msgstr ""
+"Номер\n"
+"                                    Каско:"
+
+#: sms/templates/pages/shipment.html:103
+msgid "OSAGO expire date:"
+msgstr "Дата истечения ОСАГО"
+
+#: sms/templates/pages/shipment.html:107
+msgid ""
+"KASKO\n"
+"                                    number:"
+msgstr ""
+"Номер\n"
+"                                    КАСКО:"
+
+#: sms/templates/pages/shipment.html:111
+msgid "KASKO expire date:"
+msgstr "Дата истечения КАСКО"
+
+#: sms/templates/pages/shipment.html:115
+msgid "Trailer:"
+msgstr "Прицеп:"
+
+#: sms/templates/pages/shipment.html:127
+msgid ""
+"Company\n"
+"                        info:"
+msgstr ""
+"Информация о \n"
+"                        компании:"
+
+#: sms/templates/pages/shipment.html:130
+msgid "Company name:"
+msgstr "Название компании:"
+
+#: sms/templates/pages/shipment.html:134
+msgid "Company manager:"
+msgstr "Менеджер компании:"
+
+#: sms/templates/pages/shipment.html:138
+msgid "Manager phone:"
+msgstr "Телефон менеджера:"
+
+#: sms/templates/pages/shipment.html:142
+msgid "Company email:"
+msgstr "Email компании:"
+
+#: sms/templates/pages/shipment.html:146
+msgid "Documents:"
+msgstr "Документы:"
+
+#: sms/templates/pages/shipment.html:149
+msgid " Document: "
+msgstr " Документ: "
+
+#: sms/templates/pages/shipment.html:150 sms/templates/pages/shipment.html:155
+msgid "download"
+msgstr "скачать"
+
+#: sms/templates/pages/shipment.html:154
+msgid " eSign: "
+msgstr " ЭП: "
+
+#: sms/templates/pages/shipment.html:158
+msgid " QR-code:"
+msgstr " QR-код: "
+
+#: sms/templates/pages/shipment.html:160
+msgid " Download: "
+msgstr " Скачать: "
+
+#: sms/templates/pages/shipment.html:161
+msgid "link"
+msgstr "ссылка"
+
+#: sms/templates/pages/shipment.html:164
+msgid " Shipment qr: "
+msgstr " QR Доставки "
+
+#: sms/templates/pages/shipment.html:178
+msgid "Delete"
+msgstr "Удалить"
+
+#: sms/templates/pages/shipment.html:180
+msgid "Accept"
+msgstr "Принять"
+
+#: sms/templates/pages/shipment.html:193
+msgid "Delete shipment"
+msgstr "Удалить доставку"
+
+#: sms/templates/pages/shipment.html:197
+msgid ""
+"Performing this action will delete shipment from service. <br> To confirm"
+" it, enter login password:"
+msgstr ""
+"Выполнение этого действия приведет к удалению доставки. <br> Для "
+"подтверждения введите\n"
+"                        пароль для входа:"
+
+#: sms/templates/pages/shipment.html:201
+msgid "Enter secret code here"
+msgstr "Введите секретный код сюда"
+
+#: sms/templates/pages/shipment.html:207 sms/templates/pages/shipment.html:234
+msgid "Confirm action"
+msgstr "Подтвердить действие"
+
+#: sms/templates/pages/shipment.html:211 sms/templates/pages/shipment.html:238
+msgid "Close"
+msgstr "Закрыть"
+
+#: sms/templates/pages/shipment.html:212 sms/templates/pages/shipment.html:239
+msgid "Confirm"
+msgstr "Подтвердить"
+
+#: sms/templates/pages/shipment.html:225
+msgid "Accept shipment"
+msgstr "Принять доставку"
+
+#: sms/templates/pages/shipment.html:229
+msgid ""
+"Performing this action will set \"accepted\" status for shipment. <br> To"
+" confirm it, check\n"
+"                        checkbox under this message."
+msgstr ""
+"Выполнение этого действия приведет к установке статуса \"accepted\" для "
+"доставки. <br> Для подтверждения отметьте\n"
+"                        подтверждение галочкой под этим сообщением."
+
+#: sms/templates/pages/show-qr.html:12
+msgid "QRCode for shipment №"
+msgstr "QR-Код для доставки №"
+
+#: sms/templates/pages/show-qr.html:13
+msgid "Authentication token: "
+msgstr "Аутентификационный токен:"
+
+#: sms/templates/pages/show-qr.html:17
+msgid ""
+"Use this QR-Code to access information about shipment with id\n"
+"                    "
+msgstr "Используйте этот QR-Код для доступа к информации о доставке с id "
+
+#: sms/templates/pages/sign-docs.html:14
+msgid "Sign your documents"
+msgstr "Подпишите загруженные документы"
+
+#: sms/templates/pages/sign-docs.html:18
+msgid "Document list"
+msgstr "Список документов"
+
+#: sms/templates/pages/sign-docs.html:29
+msgid "Sign"
+msgstr "Электронная подпись"
+
+#: sms/templates/pages/sign-docs.html:38
+msgid ""
+"Confirm upload. <br> By uploading these documents, you\n"
+"                                confirm your participation in the "
+"confirmation of their authenticity and agree to the\n"
+"                                processing of your personal data by your "
+"eSign."
+msgstr ""
+"Подтвердите загрузку. <br> Загружая эти документы, вы подтверждаете своё "
+"причастие к подтверждению их подлинности и соглашаетесь на обработку "
+"ваших персональных данных по вашей электронной подписи."
+
+#~ msgid "Error"
+#~ msgstr "Ошибка"
+
+#~ msgid "example: Co.ltd Ivanov Ivan 12.05.2005"
+#~ msgstr "пр: Дэлфи Иванов Иван 12.05.2005"
+
+#~ msgid "example: Kamaz A000AA"
+#~ msgstr "пр: Камаз А000АА"
+
+#~ msgid "Search"
+#~ msgstr "Поиск"
+
+#~ msgid "Sign Docs"
+#~ msgstr "Подпись документов"
+
+#~ msgid "Incorrect file extension, use .txt"
+#~ msgstr "Неправильное расширение документа, используйте .txt"
+
+#~ msgid "You must confirm your upload"
+#~ msgstr "Вы должны подтвердить подпись загруженных документов"
+

@@ -1,0 +1,53 @@
+{% extends 'base/base.html' %}
+
+{% block header %}
+{% include "includes/header.html" %}
+{% endblock %}
+
+{% block content %}
+<section class='create-shipment'>
+    <div class="clw_wrapper">
+        <div class="container-fluid">
+            <form action="{{url_for('signDocs', shipment_id=shipment_id)}}" enctype="multipart/form-data" method='post'
+                class="row justify-content-center">
+                <div class="col-lg-7 col-sm-12">
+                    <p class='h2 mt-3 text-center'>{{_('Sign your documents')}}</p>
+                    <div class='create-wrap'>
+                        <input type="hidden" name="csrf_token" value="{{ csrf_token() }}" />
+                        <p class="text-start h4 mt-3">
+                            {{_('Document list')}}
+                        </p>
+                        <ul class="doc-list">
+                            {% for doc in docs %}
+                            <li class="li">
+                                <div class="doc-box">
+                                    <i class='bi bi-hexagon ms-4'> {{doc}}</i>
+                                </div>
+                            </li>
+                            {% endfor %}
+                        </ul>
+                        <p class='text-start h5 mt-3'>{{_('Sign')}}</p>
+                        <p class='m-0 mb-1 text-red'>{% for error in form.sign.errors %}{{error}}{% endfor %}</p>
+                        <div class="input-group">
+                            <input name="{{form.sign.name}}" type="file" class="form-control"
+                                aria-describedby="signUpload" aria-label="Upload" accept="text/plain" required>
+                        </div>
+                        <div class="form-check form-switch mt-2">
+                            <input class="form-check-input" type="checkbox" role="switch" id="confirmCheckBox"
+                                name="confirm">
+                            <label class="form-check-label" for="confirmCheckBox">{{_('Confirm upload. <br> By uploading these documents, you
+                                confirm your participation in the confirmation of their authenticity and agree to the
+                                processing of your personal data by your eSign.')}}</label>
+                        </div>
+                        <button type="submit" class='btn btn-outline-dark mt-4'>{{_('Save')}}</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block footer %}
+{% include "includes/footer.html" %}
+{% endblock %}

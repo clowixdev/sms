@@ -1,0 +1,214 @@
+{% extends 'base/base.html' %}
+
+{% block header %}
+{% include "includes/header.html" %}
+{% endblock %}
+
+{% block content %}
+<section>
+    <div class="container-fluid">
+        <div class="row align-items-center main_row1">
+            <div class="col-lg-8 col-md-12">
+                <div class="information">
+                    <p class='h3 fst-italic text-center'>{{_('About our team')}} <i class="bi bi-people"></i></p>
+                    <p class="firstParagraph"><i class='bi bi-globe'></i><span class='fs-6'>
+                            {{_('The Iskra team was created in 2018 and consisted of four young robotics engineers and
+                            two
+                            trainers. The goal was to prepare them and participate in various competitions. The team has
+                            changed over time,
+                            but their skill has invariably grown, as evidenced by the victories at the regional and
+                            all-Russian
+                            level.')}}</span>
+                    </p>
+                    <p class="secondParagraph"><i class='bi bi-globe'></i><span class='fs-6'>
+                            {{_('Main achievements - 4 1st degree diplomas were won at Roboforum in Yuzhno-Sakhalinsk in
+                            2019
+                            year, three years in a row (in 2019, 2020 and 2021) we became absolute winners of
+                            regional
+                            robotic competitions "IKaR", in the All-Russian
+                            robotic competitions reached 2nd place in the IKaR-TECHNO nomination in 2020 and 1
+                            places
+                            in the nomination "IKaR-PROFI" in 2021, took 1st place in the regional Festival of
+                            Engineering
+                            creativity "KVANT-IN" in the nomination "Makerton (Goldberg Machines)" in 2021. ')}}</span>
+                    </p>
+                    <p class="thirdParagraph"><i class='bi bi-globe'></i><span class='fs-6'>
+                            {{_('Team members are very different both in age (13-16 years old) and in hobbies (3D
+                            modeling,
+                            programming, construction, swimming, tourism). But we are all united by the desire for
+                            creativity and experimentation. ')}}</span>
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-12">
+                <div id="firstRowCarousel" class="carousel slide rss_carousel" data-bs-interval="false">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#firstRowCarousel" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#firstRowCarousel" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#firstRowCarousel" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="{{url_for('static', filename='img/4.JPG')}}" class="d-block w-100"
+                                alt="1st photo">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="{{url_for('static', filename='img/9.JPG')}}" class="d-block w-100"
+                                alt="2nd photo">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="{{url_for('static', filename='img/1.JPG')}}" class="d-block w-100"
+                                alt="3rd photo">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#firstRowCarousel"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#firstRowCarousel"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="row align-items-center main_row2">
+            <div class="col-lg-4 col-md-12">
+                <div id="secondRowCarousel" class="carousel slide rss_carousel" data-bs-interval="false">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#secondRowCarousel" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#secondRowCarousel" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#secondRowCarousel" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="{{url_for('static', filename='img/6.JPG')}}" class="d-block w-100"
+                                alt="1st photo">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="{{url_for('static', filename='img/3.JPG')}}" class="d-block w-100"
+                                alt="2nd photo">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="{{url_for('static', filename='img/2.JPG')}}" class="d-block w-100"
+                                alt="3rd photo">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#secondRowCarousel"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#secondRowCarousel"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+            <div class="col-lg-8 col-md-12">
+                <div class="information">
+                    <p class='h3 fst-italic text-center'>{{_('We are in "FLL"')}} <i class="bi bi-globe"></i></p>
+                    <p class="firstParagraph"><i class='bi bi-globe'></i><span class='fs-6'>
+                            {{_('In March 2021, the ISKRA team tried their hand at the regional stage of the
+                            international
+                            Championship called First LEGO League (FLL) in the Challenge category. Our team took 2nd
+                            place and in April
+                            we took part in the National Championship in Nizhny Novgorod. It was very difficult and
+                            interesting. ')}}</span>
+                    </p>
+                    <p class="secondParagraph"><i class='bi bi-globe'></i><span class='fs-6'>
+                            {{_('The team brought home a lot of impressions and ideas. And immediately started making
+                            preparations for
+                            FLL
+                            2022 year. Team coach Anna Georgievna Strelchenok took part in September
+                            educational project "Academy FIRST" in Yuzhno-Sakhalinsk and was certified as a judge and
+                            FLL Challenge 2022 Expert. ')}}</span>
+                    </p>
+                    <p class="thirdParagraph"><i class='bi bi-globe'></i><span class='fs-6'>
+                            {{_('In September, the expanded version of the team began preparations for the regional
+                            stage of the championship
+                            -
+                            design and programming of robots, creating a project, make an engineering book. ')}}
+                        </span>
+                </div>
+            </div>
+        </div>
+        <div class="row align-items-center main_row3">
+            <div class="col-lg-8 col-md-12">
+                <div class="information">
+                    <p class='h3 fst-italic text-center'> {{_('About project')}} <i class="bi bi-box-seam"></i></p>
+                    <p class="firstParagraph"><i class='bi bi-globe'></i><span class='fs-6'>
+                            {{_('At the end of October, our team met with the cargo transportation coordinator of the company LLC
+                            "DSV
+                            Sakhalin "Kobychev MV, who spoke about the features and problems of the transportation of goods in
+                            our region. In his opinion, the main problems are: ')}}</span>
+                    </p>
+                    <p class="secondParagraph"><i class='bi bi-globe'></i><span class='fs-6'>
+                            {{_('1. The driver does not have the necessary documents, which is why the car cannot on time
+                            to get in
+                            port or warehouse, this leads to a loss of time; <br> <i class="bi bi-globe"></i>
+                            2. Mandatory reconciliation of cargo and checking the conditions of transportation (for example, securing cargo
+                            or
+                            containers) at checkpoints. ')}}
+                        </span>
+                    </p>
+                    <p class="thirdParagraph"><i class='bi bi-globe'></i><span class='fs-6'>
+                            {{_('After some discussion, we decided to make a website with a database of shipments. Each record contains information about the company, about the driver, about
+                            the car and all the necessary documents. Any responsible person will be able to view the
+                            documents, to whom the driver will show the generated QR code.')}}</span>
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-12">
+                <div id="thirdRowCarousel" class="carousel slide rss_carousel" data-bs-interval="false">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#thirdRowCarousel" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#thirdRowCarousel" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#thirdRowCarousel" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="{{url_for('static', filename='img/5.JPG')}}" class="d-block w-100"
+                                alt="1st photo">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="{{url_for('static', filename='img/8.JPG')}}" class="d-block w-100"
+                                alt="2nd photo">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="{{url_for('static', filename='img/7.JPG')}}" class="d-block w-100"
+                                alt="3rd photo">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#thirdRowCarousel"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#thirdRowCarousel"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block footer %}
+{% include "includes/footer.html" %}
+{% endblock %}

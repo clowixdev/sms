@@ -1,0 +1,249 @@
+{% extends 'base/base.html' %}
+
+{% block header %}
+{% include "includes/header.html" %}
+{% endblock %}
+
+{% block content %}
+<section>
+    <div class="container-fluid">
+        <div class="row">   
+            <div class="col-lg-5 col-sm-12 m-3 mt-3">
+                <p class='h3 fst-italic mb-2'><i class="bi bi-box-seam"></i>{{_(' SHIPMENT ID: ')}}{{shipment.id}} </p>
+                <p class='h3 fst-italic mb-2'><i class="bi bi-hdd-stack "></i>{{_(' STATUS: ')}}{% if shipment.accepted == False%} In transit {% else %} Accepted {% endif %}</p>
+                <ul class='shipment-list'> <span class='h4'><i class='bi bi-arrow-return-right'></i>{{_('Date info:')}}</span>
+                    <li class="li">
+                        <i class='bi bi-hexagon ms-4'><span><span class='fst-italic fw-bold'> {{_('Shipment created:')}}
+                                </span>{{shipment.create_date}}</span></i>
+                    </li>
+                    <li class="li">
+                        <i class='bi bi-hexagon ms-4'><span><span class='fst-italic fw-bold'> {{_('Shipment arrival date:')}}
+                                </span>{{shipment.arrival_date}}</span></i>
+                    </li>
+                </ul>
+                <ul class='shipment-list'> <span class='h4'><i class='bi bi-arrow-return-right'></i> {{_('Driver info:')}}</span>
+                    <li class="li">
+                        <i class='bi bi-hexagon ms-4'><span><span class='fst-italic fw-bold'> {{_('FIO:')}}</span>
+                                {{driver.fio}}</span></i>
+                    </li>
+                    <li class="li">
+                        <i class='bi bi-hexagon ms-4'><span><span class='fst-italic fw-bold'> {{_('Date of birth:')}}</span>
+                                {{driver.birthday}}</span></i>
+                    </li>
+                    <li class="li">
+                        <i class='bi bi-hexagon ms-4'><span><span class='fst-italic fw-bold'> {{_('Driver license:')}}</span>
+                                {{driver.d_license}}</span></i>
+                    </li>
+                    <li class="li">
+                        <i class='bi bi-hexagon ms-4'><span><span class='fst-italic fw-bold'> {{_('DL expire date:')}}</span>
+                                {{driver.dl_expire_date}}</span></i>
+                    </li>
+                    <li class="li">
+                        <i class='bi bi-hexagon ms-4'><span><span class='fst-italic fw-bold'> {{_('DL categories')}}</i>
+                        <p class='shipment-list ms-5 mb-0'> <span class='fst-italic fw-bold'><i
+                                    class='bi bi-arrow-return-right'></i> C {% if driver.c_cat %}<i
+                                    class="bi bi-check-square"></i>{% else %}<i class="bi bi-dash-square"></i>{% endif
+                                %}</span>
+                        <p class='shipment-list ms-5 mb-0'> <span class='fst-italic fw-bold'><i
+                                    class='bi bi-arrow-return-right'></i> C1 {% if driver.c1_cat %}<i
+                                    class="bi bi-check-square"></i>{% else %}<i class="bi bi-dash-square"></i>{% endif
+                                %}</span>
+                        <p class='shipment-list ms-5 mb-0'> <span class='fst-italic fw-bold'><i
+                                    class='bi bi-arrow-return-right'></i> D {% if driver.d_cat %}<i
+                                    class="bi bi-check-square"></i>{% else %}<i class="bi bi-dash-square"></i>{% endif
+                                %}</span>
+                        <p class='shipment-list ms-5 mb-0'> <span class='fst-italic fw-bold'><i
+                                    class='bi bi-arrow-return-right'></i> D1 {% if driver.d1_cat %}<i
+                                    class="bi bi-check-square"></i>{% else %}<i class="bi bi-dash-square"></i>{% endif
+                                %}</span>
+                        <p class='shipment-list ms-5 mb-0'> <span class='fst-italic fw-bold'><i
+                                    class='bi bi-arrow-return-right'></i> E {% if driver.e_cat %}<i
+                                    class="bi bi-check-square"></i>{% else %}<i class="bi bi-dash-square"></i>{% endif
+                                %}</span>
+                    </li>
+                    <li class="li">
+                        <i class='bi bi-hexagon ms-4'><span><span class='fst-italic fw-bold'> {{_('MED expire date:')}}</span>
+                                {{driver.med_expire_date}}</span></i>
+                    </li>
+                    <li class="li">
+                        <i class='bi bi-hexagon ms-4'><span><span class='fst-italic fw-bold'> {{_('DL expire date:')}}</span>
+                                {{driver.dl_expire_date}}</span></i>
+                    </li>
+                    <li class="li">
+                        <i class='bi bi-hexagon ms-4'><span><span class='fst-italic fw-bold'> {{_('OMS number:')}}</span>
+                                {{driver.oms}}</span></i>
+                    </li>
+                    <li class="li">
+                        <i class='bi bi-hexagon ms-4'><span><span class='fst-italic fw-bold'> {{_('Phone:')}}</span>
+                                {{driver.phone}}</span></i>
+                    </li>
+                </ul>
+                <ul class='shipment-list'> <span class='h4'><i class='bi bi-arrow-return-right'></i> {{_('Car info:')}}</span>
+                    <li class="li">
+                        <i class='bi bi-hexagon ms-4'><span><span class='fst-italic fw-bold'> {{_('Model:')}}</span>
+                                {{car.model}}</span></i>
+                    </li>
+                    <li class="li">
+                        <i class='bi bi-hexagon ms-4'><span><span class='fst-italic fw-bold'> {{_('Registration
+                                    number:')}}</span> {{car.reg_num}}</span></i>
+                    </li>
+                    <li class="li">
+                        <i class='bi bi-hexagon ms-4'><span><span class='fst-italic fw-bold'> {{_('PTS
+                                    number:')}}</span> {{car.pts}}</span></i>
+                    </li>
+                    <li class="li">
+                        <i class='bi bi-hexagon ms-4'><span><span class='fst-italic fw-bold'> {{_('PTS expire date:')}}</span>
+                                {{car.expire_date}}</span></i>
+                    </li>
+                    <li class="li">
+                        <i class='bi bi-hexagon ms-4'><span><span class='fst-italic fw-bold'> {{_('OSAGO
+                                    number:')}}</span> {{car.osago}}</span></i>
+                    </li>
+                    <li class="li">
+                        <i class='bi bi-hexagon ms-4'><span><span class='fst-italic fw-bold'> {{_('OSAGO expire date:')}}</span>
+                                {{car.osago_expire_date}}</span></i>
+                    </li>
+                    <li class="li">
+                        <i class='bi bi-hexagon ms-4'><span><span class='fst-italic fw-bold'> {{_('KASKO
+                                    number:')}}</span> {{car.kasko}}</span></i>
+                    </li>
+                    <li class="li">
+                        <i class='bi bi-hexagon ms-4'><span><span class='fst-italic fw-bold'> {{_('KASKO expire date:')}}</span>
+                                {{car.kasko_expire_date}}</span></i>
+                    </li>
+                    <li class="li">
+                        <i class='bi bi-hexagon ms-4'><span><span class='fst-italic fw-bold'> {{_('Trailer:')}}</span>
+                                {% if car.has_trailer == 1 %}
+                                +
+                                {% else %}
+                                -
+                                {% endif %}
+                            </span></i>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-5 col-sm-12 m-2">
+                <p class='h3 fst-italic mt-5'></p>
+                <ul class='shipment-list'> <span class='h4'><i class='bi bi-arrow-return-right'></i> {{_('Company
+                        info:')}}</span>
+                    <li class="li">
+                        <i class='bi bi-hexagon ms-4'><span><span class='fst-italic fw-bold'> {{_('Company name:')}}</span>
+                                {{company.name}}</span></i>
+                    </li>
+                    <li class="li">
+                        <i class='bi bi-hexagon ms-4'><span><span class='fst-italic fw-bold'> {{_('Company manager:')}}</span>
+                                {{company.manager}}</span></i>
+                    </li>
+                    <li class="li">
+                        <i class='bi bi-hexagon ms-4'><span><span class='fst-italic fw-bold'> {{_('Manager phone:')}}</span>
+                                {{company.phone}}</span></i>
+                    </li>
+                    <li class="li">
+                        <i class='bi bi-hexagon ms-4'><span><span class='fst-italic fw-bold'> {{_('Company email:')}}</span>
+                                {{company.email}}</span></i>
+                    </li>
+                </ul>
+                <ul class="shipment-list"> <span class='h4'><i class='bi bi-arrow-return-right'></i> {{_('Documents:')}}</span>
+                    {% for doc in docs %}
+                    <li class="li">
+                        <i class='bi bi-hexagon ms-4'><span><span class='fst-italic fw-bold'>{{_(' Document: ')}}</span>
+                                <a href="{{url_for('downloadFile', file=doc, shipment_id=shipment_id, mimetype='application/pdf')}}" target="_blank">{{_('download')}}</a></span></i>
+                    </li>
+                    {% endfor %}
+                    <!-- <li class="li">
+                        <i class='bi bi-hexagon ms-4'><span><span class='fst-italic fw-bold'>{{_(' eSign: ')}}</span>
+                                <a href="{{url_for('downloadFile', file=sign, shipment_id=shipment_id, mimetype='text/plain')}}" target="_blank">{{_('download')}}</a></span></i>
+                    </li> -->
+                </ul>
+                <ul class='shipment-list'> <span class='h4'><i class='bi bi-arrow-return-right'></i>{{_(' QR-code:')}}</span>
+                    <li class="li">
+                        <i class='bi bi-hexagon ms-4'><span><span class='fst-italic fw-bold'>{{_(' Download: ')}}</span><a
+                            href="{{url_for('downloadFile', file=qrdownload, shipment_id=shipment_id, mimetype='image/jpeg')}}" target="_blank" class='link'>{{_('link')}}</a></span></i>
+                    </li>
+                    <li class="li">
+                        <i class='bi bi-hexagon ms-4'><span class='fst-italic fw-bold'>{{_(' Shipment qr: ')}}</span></i>
+                        <p class='ms-1'>
+                            <div class="show-qr-img">
+                                <img src="{{qrurl}}" class='image-fluid' alt="shipment qr" />
+                            </div>    
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row text-end align-items-center">
+            <div class="col-12 mb-3">
+                {% if shipment.accepted == False%}
+                <button type='button' data-bs-toggle="modal" data-bs-target="#deleteShipmentModal"
+                    class='btn btn-outline-danger me-1'>{{_('Delete')}}</button>
+                <button type='button' data-bs-toggle="modal" data-bs-target="#acceptShipmentModal"
+                    class='btn btn-outline-success me-1'>{{_('Accept')}}</button>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</section>
+<div class="modal fade" id="deleteShipmentModal" tabindex="-1" aria-labelledby="deleteShipmentModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <form action="{{url_for('deleteShipment', shipment_id=shipment_id)}}" method='post'>
+                <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="deleteShipmentModalLabel">{{_('Delete shipment')}}</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>{{_("Performing this action will delete shipment from service. <br> To confirm it, enter login password:")}}</p>
+                    <div class="form-floating mb-2">
+                        <input type="password" class="form-control" id="secretCode" placeholder="secret code"
+                            name='{{form.secret_code.name}}'>
+                        <label for="secretCode">{{_('Enter secret code here')}}</label>
+                        <p class='m-0 mb-1 text-red'>{% for error in form.secret_code.errors %}{{error}}{% endfor %}</p>
+                    </div>
+                    <div class="form-check form-switch mt-2">
+                        <input class="form-check-input" type="checkbox" role="switch" id="confirmCheckBox"
+                            name="confirm">
+                        <label class="form-check-label" for="confirmCheckBox">{{_('Confirm action')}}</label>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">{{_('Close')}}</button>
+                    <button type="submit" class="btn btn-outline-danger">{{_('Confirm')}}</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="acceptShipmentModal" tabindex="-1" aria-labelledby="acceptShipmentModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <form action="{{url_for('acceptShipment', shipment_id=shipment_id, token=token)}}" method='post'>
+                <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="acceptShipmentModalLabel">{{_('Accept shipment')}}</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>{{_('Performing this action will set "accepted" status for shipment. <br> To confirm it, check
+                        checkbox under this message.')}}</p>
+                    <div class="form-check form-switch mt-2">
+                        <input class="form-check-input" type="checkbox" role="switch" id="confirmCheckBox"
+                            name="confirm">
+                        <label class="form-check-label" for="confirmCheckBox">{{_('Confirm action')}}</label>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">{{_('Close')}}</button>
+                    <button type="submit" class="btn btn-outline-success">{{_('Confirm')}}</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block footer %}
+{% include "includes/footer.html" %}
+{% endblock %}

@@ -1,0 +1,85 @@
+{% extends 'base/base.html' %}
+
+{% block header %}
+{% include "includes/header.html" %}
+{% endblock %}
+
+{% block content %}
+<section>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-6 col-md-12">
+                <p class='h3 fst-italic m-3 mb-2'><i class="bi bi-check-lg"></i>{{_(' Accepted shipments: ')}}</p>
+                <div class="accepted-shipments">
+                    {% for shipment in accepted_shipments %}
+                    <div class="shipment">
+                        <div class="row text-start">
+                            <div class="col-6">
+                                <span class='m-0 h5'>{{_('ID')}}{{shipment.id}}</span>
+                            </div>
+                            <div class="col-6 text-end">
+                                <span class=''>{{_('Accepted')}} <i class='bi bi-check-lg'></i></span>
+                            </div>
+                        </div>
+                        <hr width="100%" class='mt-1 mb-1'>
+                        <div class="row text-start">
+                            <div class="col-6">
+                                <p class="m-0">
+                                    <span class='fw-bold'>{{_('Create date:')}} <span class='fw-normal'>****-**-**</span></span><br>
+                                    <span class='fw-bold'>{{_('Arrival date:')}} <span class='fw-normal'>****-**-**</span></span><br>
+                                    <span class='fw-bold'>{{_('Driver fio:')}} <span class='fw-normal'>*****</span></span><br>
+                                    <span class='fw-bold'>{{_('Car registration number:')}} <span class='fw-normal'>*********</span></span>
+                                </p>
+                            </div>
+                            <div class="col-6 d-flex align-items-end">
+                                <div class="col-12 text-end">
+                                    <a href="{{url_for('showShipment', shipment_id=shipment.id, token='0')}}" class='btn btn-outline-dark'>{{_('View')}}</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12">
+                <p class='h3 fst-italic m-3 mb-2'><i class="bi bi-hourglass-split"></i>{{_(' Transit shipments: ')}}</p>
+                <div class="transit-shipments">
+                    {% for shipment in transit_shipments %}
+                    <div class="shipment">
+                        <div class="row text-start">
+                            <div class="col-6">
+                                <span class='m-0 h5'>{{_('ID')}}{{shipment.id}}</span>
+                            </div>
+                            <div class="col-6 text-end">
+                                <span class=''>{{_('Transit ')}}<i class="bi bi-hourglass-split"></i></span>
+                            </div>
+                        </div>
+                        <hr width="100%" class='mt-1 mb-1'>
+                        <div class="row text-start">
+                            <div class="col-6">
+                                <p class="m-0">
+                                    <span class='fw-bold'>{{_('Create date: ')}}<span class='fw-normal'>****-**-**</span></span><br>
+                                    <span class='fw-bold'>{{_('Arrival date: ')}}<span class='fw-normal'>****-**-**</span></span><br>
+                                    <span class='fw-bold'>{{_('Driver fio: ')}}<span class='fw-normal'>*****</span></span><br>
+                                    <span class='fw-bold'>{{_('Car registration number: ')}}<span class='fw-normal'>*********</span></span>
+                                </p>
+                            </div>
+                            <div class="col-6 d-flex align-items-end">
+                                <div class="col-12 text-end">
+                                    <a href="{{url_for('showShipment', shipment_id=shipment.id, token='0')}}" class='btn btn-outline-dark'>{{_('View')}}</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+
+{% block footer %}
+{% include "includes/footer.html" %}
+{% endblock %}

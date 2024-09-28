@@ -1,0 +1,28 @@
+{% extends 'base/base.html' %}
+
+{% block header %}
+{% include "includes/header.html" %}
+{% endblock %}
+
+{% block content %}
+<section>
+    <div class="container-fluid">
+        <div class="row justify-content-center align-items-center text-center">
+            <div class="col-6-lg col-sm-12">
+                <p class='h3 mt-3'>{{_('QRCode for shipment №')}}{{shipment_id}}</p>
+                <p class='text-muted m-0'>{{_('Authentication token: ')}} {{token}}</p>
+                <div class="show-qr-img">
+                    <img src="{{qrurl}}" class='image-fluid' alt="QR-Code" />
+                </div>
+                <p class='text-muted mt-2 fst-italic'>{{_('Use this QR-Code to access information about shipment with id
+                    ')}}{{shipment_id}}</p>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+
+{% block footer %}
+{% include "includes/footer.html" %}
+{% endblock %}

@@ -1,0 +1,44 @@
+<header class='header'>
+    <div class="container-fluid">
+        <div class="row text-center justify-content-center">
+            <div class="col-lg-7 col-md-6 col-sm-12">
+                <a href='{{url_for("index")}}' class='h2 nav-link link-dark m-0'><i class="bi bi-truck"></i>
+                    {{_('Shipments
+                    management system - SMS')}}</a>
+                <p class='mb-1'>
+                    <span class='h5'>{{_('Change language:')}}</span>
+                    <a href="{{url_for('lang_change', lang='ru')}}" class='text-muted'>Ru</a>
+                    <a href="{{url_for('lang_change', lang='en')}}" class='text-muted'>Eng</a>
+                </p>
+                <p class='small text-muted mb-3'>{{_('Shipments management system created by the Sakhalin team IskRa')}}
+                </p>
+                <form action="{{url_for('searchShipment')}}" class="search-bar" method='post'>
+                    <input type="hidden" name="csrf_token" value='{{ csrf_token() }}' />
+                    <div class="input-group d-flex justify-content-center">
+                        <input type="search" class="form-control clw-search" name='shipment_id'
+                            placeholder="{{_('Search shipment by id')}}" aria-label="Search shipment">
+                        <div class="input-group-text p-0">
+                            <button class='btn bi bi-search' id='btn' type='submit'></button>
+                        </div>
+                    </div>
+                    <div class="clw-head-btn-wrapper">
+                        <a href="{{url_for('login', to='create')}}" class='btn btn-outline-dark ms-2'>{{_('Create')}}</a>
+                        <a href="{{url_for('login', to='list')}}" class='btn btn-outline-dark ms-2'>{{_('List')}}</a>
+                        {% if current_user.is_authenticated %}
+                            <a href="{{url_for('logout')}}" class='btn btn-outline-dark ms-2'>{{_('Logout')}}</a>
+                        {% else %}
+                            <a href="{{url_for('login', to='index')}}" class='btn btn-outline-dark ms-2'>{{_('Login')}}</a>
+                        {% endif %} 
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="row text-center justify-content-center">
+            <div class="col-lg-7 col-md-6 col-sm-12">
+                {% for cat, msg in get_flashed_messages(True) %}
+                <div class="flash {{cat}}">{{msg}}</div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</header>
